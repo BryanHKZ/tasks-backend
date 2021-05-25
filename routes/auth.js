@@ -8,6 +8,6 @@ const authControler = require("../controllers/authController");
 
 router.post("/", authControler.authUser);
 
-router.get("", auth, authControler.usuarioAutenticado);
+router.get("/", auth, authControler.usuarioAutenticado);
 
 module.exports = router;
